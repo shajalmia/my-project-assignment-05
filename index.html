@@ -23,6 +23,7 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
+
   <body class="bg-[#f5fff6] mx-auto my-[20px]">
     <!-- Header Section -->
     <header class="h-[50px] bg-white flex justify-between items-center">
@@ -51,7 +52,11 @@
         <div
           class="copy w-[50px] rounded-[15px] md:w-[100px] p-[5px] text-center bg-[#00a63e]"
         >
-          <h1 class="text-white"><span id="copy-count">0</span>Copy</h1>
+          <h1
+            class="text-white flex justify-center items-center gap-[5px] md:gap-[10px]"
+          >
+            <span id="copy-count">0</span>Copy
+          </h1>
         </div>
       </div>
     </header>
@@ -70,13 +75,12 @@
 
     <!-- Main card Section -->
 
-    <div class="main-section mt-[100px] grid grid-cols-12 gap-4  h-[800px]">
-
+    <div class="main-section mt-[50px] grid-cols-1 md:grid grid-cols-12 gap-4">
       <div
-        class="left-card-container grid grid-cols-3 gap-2 col-span-9 "
+        class="left-card-container grid-cols-1 md:grid grid-cols-3 gap-2 col-span-9"
       >
         <div
-          class="card bg-white shadow-md gap-2 border-green-500  h-[250px] p-[10px]"
+          class="card bg-white shadow-md gap-2 border-green-500 h-[250px] p-[10px]"
           data-service="National Emergency"
           data-number="999"
         >
@@ -94,17 +98,17 @@
           </p>
 
           <div class="button-section mt-[20px] flex justify-evenly">
-            <button class="btn-copy btn w-[150px]">
+            <button class="btn-copy btn">
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn-call btn w-[150px] bg-[green]">
+            <button class="btn-call btn bg-[green]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
 
         <div
-          class="card bg-white shadow-md gap-2 border-green-500  h-[250px] p-[10px]"
+          class="card bg-white shadow-md gap-2 border-green-500 h-[250px] p-[10px]"
           data-service="Police Helpline"
           data-number="999"
         >
@@ -122,17 +126,17 @@
           </p>
 
           <div class="button-section mt-[20px] flex justify-evenly">
-            <button class="btn-copy btn w-[150px]">
+            <button class="btn-copy btn">
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn-call btn w-[150px] bg-[green]">
+            <button class="btn-call btn bg-[green]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
 
         <div
-          class="card bg-white shadow-md gap-2 border-green-500  h-[250px] p-[10px]"
+          class="card bg-white shadow-md gap-2 border-green-500 h-[250px] p-[10px]"
           data-service="Fire Service"
           data-number="999"
         >
@@ -150,17 +154,17 @@
           </p>
 
           <div class="button-section mt-[20px] flex justify-evenly">
-            <button class="btn-copy btn w-[150px]">
+            <button class="btn-copy btn">
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn-call btn w-[150px] bg-[green]">
+            <button class="btn-call btn bg-[green]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
 
         <div
-          class="card bg-white shadow-md gap-2 border-green-500  h-[250px] p-[10px]"
+          class="card bg-white shadow-md gap-2 border-green-500 h-[250px] p-[10px]"
           data-service="Ambulance Service"
           data-number="1994-999999"
         >
@@ -178,17 +182,17 @@
           </p>
 
           <div class="button-section mt-[20px] flex justify-evenly">
-            <button class="btn-copy btn w-[150px]">
+            <button class="btn-copy btn">
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn-call btn w-[150px] bg-[green]">
+            <button class="btn-call btn bg-[green]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
 
         <div
-          class="card bg-white shadow-md gap-2 border-green-500  h-[250px] p-[10px]"
+          class="card bg-white shadow-md gap-2 border-green-500 h-[250px] p-[10px]"
           data-service="Women and Child Helpline"
           data-number="109"
         >
@@ -208,17 +212,17 @@
           </p>
 
           <div class="button-section mt-[20px] flex justify-evenly">
-            <button class="btn-copy btn w-[150px]">
+            <button class="btn-copy btn">
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn-call btn w-[150px] bg-[green]">
+            <button class="btn-call btn bg-[green]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
 
         <div
-          class="card bg-white shadow-md gap-2 border-green-500  h-[250px] p-[10px]"
+          class="card bg-white shadow-md gap-2 border-green-500 h-[250px] p-[10px]"
           data-service="Anti-Corruption"
           data-number="106"
         >
@@ -236,17 +240,17 @@
           </p>
 
           <div class="button-section mt-[20px] flex justify-evenly">
-            <button class="btn-copy btn w-[150px]">
+            <button class="btn-copy btn">
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn-call btn w-[150px] bg-[green]">
+            <button class="btn-call btn bg-[green]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
 
         <div
-          class="card bg-white shadow-md gap-2 border-green-500  h-[250px] p-[10px]"
+          class="card bg-white shadow-md gap-2 border-green-500 h-[250px] p-[10px]"
           data-service="Electricity Helpline"
           data-number="16216"
         >
@@ -264,17 +268,17 @@
           </p>
 
           <div class="button-section mt-[20px] flex justify-evenly">
-            <button class="btn-copy btn w-[150px]">
+            <button class="btn-copy btn">
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn-call btn w-[150px] bg-[green]">
+            <button class="btn-call btn bg-[green]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
 
         <div
-          class="card bg-white shadow-md gap-2 border-green-500  h-[250px] p-[10px]"
+          class="card bg-white shadow-md gap-2 border-green-500 h-[250px] p-[10px]"
           data-service="Brac Helpline"
           data-number="16445"
         >
@@ -292,17 +296,17 @@
           </p>
 
           <div class="button-section mt-[20px] flex justify-evenly">
-            <button class="btn-copy btn w-[150px]">
+            <button class="btn-copy btn">
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn-call btn w-[150px] bg-[green]">
+            <button class="btn-call btn bg-[green]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
 
         <div
-          class="card bg-white shadow-md gap-2 border-green-500  h-[250px] p-[10px]"
+          class="card bg-white shadow-md gap-2 border-green-500 h-[250px] p-[10px]"
           data-service="Bangladesh Railway"
           data-number="163"
         >
@@ -320,10 +324,10 @@
           </p>
 
           <div class="button-section mt-[20px] flex justify-evenly">
-            <button id="btn-copy" class="btn-copy btn w-[150px]">
+            <button id="btn-copy" class="btn-copy btn">
               <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button class="btn-call btn w-[150px] bg-[green]">
+            <button class="btn-call btn bg-[green]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -332,7 +336,7 @@
 
       <div
         id="history"
-        class="right-section bg-white  col-span-3 border-2 p-[10px] border-yellow-500"
+        class="right-section bg-white col-span-3 border-2 p-[10px] border-yellow-500"
       >
         <div class="title-section flex justify-between items-center p-[10px]">
           <h1 class="font-bold">

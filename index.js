@@ -50,7 +50,7 @@ for (const btn of btns) {
     const div = document.createElement("div");
     div.innerHTML = `
         <div 
-            class="history-cart flex justify-between items-center p-[10px] bg-[#fafafa] w-[300px]"
+            class="history-cart flex justify-between items-center p-[10px] bg-[#fafafa] "
           >
             <div class="cart-left">
               <h1 class="font-bold">${data.name}</h1>
