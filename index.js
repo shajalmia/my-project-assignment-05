@@ -67,9 +67,30 @@ for (const btn of btns) {
   });
 }
 
-// History Feature:
+// Clear Feature:
 
 document.getElementById("btn-clear").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("history-container").innerText = "";
 });
+
+//Copy Feature:
+const copyBtns = document.getElementsByClassName("btn-copy");
+
+for (const btn of copyBtns) {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const initialCopyCount = parseInt(
+      document.getElementById("copy-count").innerText,
+    );
+    const updateCopyCount = initialCopyCount + 1;
+    document.getElementById("copy-count").innerText = updateCopyCount;
+
+    let card = this.closest(".card");
+    let number = card.dataset.number;
+
+    navigator.clipboard.writeText(number).then(() => {
+      alert("Copied:" + number);
+    });
+  });
+}
